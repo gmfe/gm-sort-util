@@ -15,7 +15,7 @@ function sortByMarketingThenRank(list){
         return list;
     }
     const arr = _.partition(list, v => v.id[0] === 'E');
-    return sortByRank(arr[0]).concat(arr[1]);
+    return sortByRank(arr[0]).concat(sortByRank(arr[1]));
 }
 
 module.exports = {
