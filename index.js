@@ -18,7 +18,16 @@ function sortByMarketingThenRank(list){
     return sortByRank(arr[0]).concat(sortByRank(arr[1]));
 }
 
+// 下单添加商品搜索结果根据frequency排序
+function skusSortByFrequency(list){
+    if(!list){
+        return list;
+    }
+    return _.sortBy(list, v => -v.frequency);
+}
+
 module.exports = {
     sortByRank,
-    sortByMarketingThenRank
+    sortByMarketingThenRank,
+    skusSortByFrequency
 };
