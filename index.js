@@ -2,6 +2,7 @@ import _ from 'lodash'
 
 // 一级分类 二级分类  SPU 根据rank排序
 function sortByRank(list) {
+    console.warn('sortByRank is moved to gm-service.');
     if (!list) {
         return list;
     }
@@ -11,6 +12,7 @@ function sortByRank(list) {
 
 // 优先排营销分类， 之后一级分类 二级分类  SPU 根据rank排序
 function sortByMarketingThenRank(list){
+    console.warn('sortByMarketingThenRank is moved to gm-service.');
     if(!list){
         return list;
     }
@@ -20,6 +22,7 @@ function sortByMarketingThenRank(list){
 
 // 下单添加商品搜索结果根据frequency排序
 function skusSortByFrequency(list){
+    console.warn('skusSortByFrequency is moved to gm-service.');
     if(!list){
         return list;
     }
